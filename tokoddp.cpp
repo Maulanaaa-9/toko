@@ -91,11 +91,12 @@ void keluar() {
 
 
 int main() {
-menutampilan();
+
 tampilkanMenu();
+menutampilan();
 pilihBarang();
 lihatTotalHarga();
 keluar();
 cout <<endl;
-return 0;
+return 0;
 }
