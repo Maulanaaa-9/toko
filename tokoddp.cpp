@@ -26,7 +26,7 @@ int lihatTotalHarga;
         else {
             cout << "Pilihan tidak valid! Coba lagi."<<endl;
         }
-  } while (pilihan != 3); 
+  } while (pilihan != 1); 
 }
 
 
