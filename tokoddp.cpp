@@ -71,3 +71,31 @@ void pilihBarang()
         else {
             cout << "Pilihan barang tidak valid! Coba lagi.";
         }
+            cout << "Apakah Anda ingin menambah barang lagi? (y/n): ";
+            cin >> lanjut;
+        } while (lanjut == 'y' || lanjut == 'Y'); 
+
+}
+void lihatTotalHarga() {
+    cout << "Total barang dalam keranjang: " << totalBarang << endl;
+    cout << "Total harga: Rp " << totalHarga << endl;
+}
+
+
+void keluar() {
+    cout << "Terima kasih telah berbelanja di Supermarket!";
+}
+
+
+
+
+
+int main() {
+menutampilan();
+tampilkanMenu();
+pilihBarang();
+lihatTotalHarga();
+keluar();
+cout <<endl;
+return 0;
+}
