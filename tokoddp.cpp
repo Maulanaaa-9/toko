@@ -38,3 +38,36 @@ void tampilkanMenu() {
     cout << "3. Keluar"<<endl;
     cout << "========================"<<endl;
 }
+void pilihBarang()
+{
+    int pilihanBarang;
+    int totalbarang;
+    int totalharga;
+    char lanjut; 
+
+    do {
+        cout << " Pilih jenis barang: "<<endl;
+        cout << "1. Makanan "<<endl;
+        cout << "2. Minuman "<<endl;
+        cout << "3. Snack "<<endl;
+        cout << "Masukkan pilihan barang (1-3): "<<endl;
+        cin >> pilihanBarang;
+
+        if (pilihanBarang == 1) {
+            totalBarang++;
+            totalHarga += 20000; 
+            cout << "Makanan berhasil ditambahkan ke keranjang.";
+        } 
+        else if (pilihanBarang == 2) {
+            totalBarang++;
+            totalHarga += 10000; 
+            cout << "Minuman berhasil ditambahkan ke keranjang.";
+        } 
+        else if (pilihanBarang == 3) {
+            totalBarang++;
+            totalHarga += 5000; 
+            cout << "Snack berhasil ditambahkan ke keranjang.";
+        } 
+        else {
+            cout << "Pilihan barang tidak valid! Coba lagi.";
+        }
