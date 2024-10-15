@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int totalBarang = 0;  
-float totalHarga = 0; 
+int totalHarga = 0; 
 
 void tampilkanMenu() {
     cout << "\nSelamat Datang Di Supermarket Kami!!\n";
