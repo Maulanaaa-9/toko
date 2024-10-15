@@ -3,31 +3,6 @@ using namespace std;
 int totalBarang = 0;  
 float totalHarga = 0; 
 
-void menutampilan() {
-int pilihan;
-
-    do {
-        tampilkanMenu();
-        cout << "Masukkan pilihan (1-3): ";
-        cin >> pilihan;
-
-        if (pilihan == 1) {
-            pilihBarang();
-        } 
-        else if (pilihan == 2) {
-            lihatTotalHarga();
-        } 
-        else if (pilihan == 3) {
-            keluar();
-        } 
-        else {
-            cout << "Pilihan tidak valid! Coba lagi.\n";
-        }
-  } while (pilihan != 3); 
-}
-
-
-
 void tampilkanMenu() {
     cout << "\nSelamat Datang Di Supermarket Kami!!\n";
     cout << "=== MENU SUPERMARKET ===\n";
@@ -79,6 +54,28 @@ void lihatTotalHarga() {
 
 void keluar() {
     cout << "\nTerima kasih telah berbelanja di Supermarket kami!\n";
+}
+void menutampilan() {
+int pilihan;
+
+    do {
+        tampilkanMenu();
+        cout << "Masukkan pilihan (1-3): ";
+        cin >> pilihan;
+
+        if (pilihan == 1) {
+            pilihBarang();
+        } 
+        else if (pilihan == 2) {
+            lihatTotalHarga();
+        } 
+        else if (pilihan == 3) {
+            keluar();
+        } 
+        else {
+            cout << "Pilihan tidak valid! Coba lagi.\n";
+        }
+  } while (pilihan != 3); 
 }
 
 
