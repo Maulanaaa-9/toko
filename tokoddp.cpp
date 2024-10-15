@@ -1,75 +1,71 @@
 #include <iostream>
 using namespace std;
-int pilihan;
 int totalBarang = 0;  
 float totalHarga = 0; 
 
 void menutampilan() {
-int pilihBarang;
 int pilihan;
-int keluar;
-int lihatTotalHarga;
 
     do {
+        tampilkanMenu();
         cout << "Masukkan pilihan (1-3): ";
         cin >> pilihan;
 
         if (pilihan == 1) {
-            pilihBarang;
+            pilihBarang();
         } 
         else if (pilihan == 2) {
-            lihatTotalHarga;
+            lihatTotalHarga();
         } 
         else if (pilihan == 3) {
-            keluar;
+            keluar();
         } 
         else {
-            cout << "Pilihan tidak valid! Coba lagi."<<endl;
+            cout << "Pilihan tidak valid! Coba lagi.\n";
         }
-  } while (pilihan != 1); 
+  } while (pilihan != 3); 
 }
 
 
 
 void tampilkanMenu() {
-    cout << "=== MENU SUPERMARKET ==="<<endl;
-    cout << "1. Pilih Barang"<<endl;
-    cout << "2. Lihat Total Harga"<<endl;
-    cout << "3. Keluar"<<endl;
-    cout << "========================"<<endl;
+    cout << "\nSelamat Datang Di Supermarket Kami!!\n";
+    cout << "=== MENU SUPERMARKET ===\n";
+    cout << "1. Pilih Barang\n";
+    cout << "2. Lihat Total Harga\n";
+    cout << "3. Keluar\n";
+    cout << "========================\n";
 }
-void pilihBarang()
-{
+void pilihBarang(){
     int pilihanBarang;
-    int totalbarang;
-    int totalharga;
     char lanjut; 
 
     do {
-        cout << " Pilih jenis barang: "<<endl;
-        cout << "1. Makanan "<<endl;
-        cout << "2. Minuman "<<endl;
-        cout << "3. Snack "<<endl;
-        cout << "Masukkan pilihan barang (1-3): "<<endl;
+        tampilkanMenu();
+        cout << " Pilih jenis barang:\n";
+        cout << "1. Makanan\n";
+        cout << "2. Minuman\n";
+        cout << "3. Snack\n";
+        cout << "Masukkan pilihan barang (1-3): ";
         cin >> pilihanBarang;
 
         if (pilihanBarang == 1) {
             totalBarang++;
             totalHarga += 20000; 
-            cout << "Makanan berhasil ditambahkan ke keranjang.";
+            cout << "Makanan berhasil ditambahkan ke keranjang.\n";
         } 
         else if (pilihanBarang == 2) {
             totalBarang++;
             totalHarga += 10000; 
-            cout << "Minuman berhasil ditambahkan ke keranjang.";
+            cout << "Minuman berhasil ditambahkan ke keranjang.\n";
         } 
         else if (pilihanBarang == 3) {
             totalBarang++;
             totalHarga += 5000; 
-            cout << "Snack berhasil ditambahkan ke keranjang.";
+            cout << "Snack berhasil ditambahkan ke keranjang.\n";
         } 
         else {
-            cout << "Pilihan barang tidak valid! Coba lagi.";
+            cout << "Pilihan barang tidak valid! Coba lagi.\n";
         }
             cout << "Apakah Anda ingin menambah barang lagi? (y/n): ";
             cin >> lanjut;
@@ -77,13 +73,12 @@ void pilihBarang()
 
 }
 void lihatTotalHarga() {
-    cout << "Total barang dalam keranjang: " << totalBarang << endl;
-    cout << "Total harga: Rp " << totalHarga << endl;
+    cout << "\nTotal barang dalam keranjang: " << totalBarang << "\n";
+    cout << "Total harga: Rp " << totalHarga << "\n";
 }
 
-
 void keluar() {
-    cout << "Terima kasih telah berbelanja di Supermarket!";
+    cout << "\nTerima kasih telah berbelanja di Supermarket kami!\n";
 }
 
 
@@ -91,12 +86,6 @@ void keluar() {
 
 
 int main() {
-
-tampilkanMenu();
 menutampilan();
-pilihBarang();
-lihatTotalHarga();
-keluar();
-cout <<endl;
 return 0;
 }
