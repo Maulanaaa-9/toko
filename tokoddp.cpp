@@ -16,7 +16,6 @@ void pilihBarang(){
     char lanjut; 
 
     do {
-        tampilkanMenu();
         cout << " Pilih jenis barang:\n";
         cout << "1. Makanan\n";
         cout << "2. Minuman\n";
